@@ -1,0 +1,115 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("SA Gaming Hub", "Midnight")
+local Tab = Window:NewTab("Bedwars")
+local Section = Tab:NewSection("Bedwars Gui")
+Section:NewButton("Jn HH gaming", "Recommended BedWars script", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourLocalNzi/Ye/main/Jn_V9.txt'),true))()
+    print("Clicked")
+end)
+Section:NewButton("IceCat V1", "op scripts for bedwars", function()
+-- No rekonise so sub
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Baconontop/BedwarsV1/main/IcecatBedwars'),true))()
+    print("Clicked")
+end)
+Section:NewButton("Infinite Jump", "unlimited jumps", function()
+--script made by Youtube: MrGabbe.   Discord: Mr_G_Curry #6982
+local infjmp = true
+game:GetService("UserInputService").jumpRequest:Connect(function()
+    if infjmp then
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
+    end
+end)
+    print("Clicked")
+end)
+Section:NewButton("X Vetz", "Op bedwars hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VeztWare/Vezt/main/Vezt%20-%20Bedwars%20%E2%80%A2%20V2%2C5.lua"))()
+
+    print("Clicked")
+end)
+Section:NewButton("Farmer Bedwars Hub", "Farmer KIT required", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/MdjgAvCa'),true))()
+    print("Clicked")
+end)
+Section:NewButton("Keyboard", "Keyboard", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    print("Clicked")
+end)
+Section:NewButton("Vape", "Execute keyboard script after and click right shift if on mobile on pc click right shift", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Infinite Jumps and Vape";
+    Text = "Mixed by JN HH Gaming"; -- what the text says (ofc)
+    Duration = 30;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Enjoy";
+    Text = "Don't Forget to Subscribe JN HH Gaming"; -- what the text says (ofc)
+    Duration = 30;
+})
+    print("Clicked")
+end)
+Section:NewButton("HitBox Expander", "Basically reach", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Reach", "Hit People From far away", function()
+
+
+-- cool reach script
+
+loadstring(game:HttpGet("https://pastebin.com/raw/v85uKg67", true))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Auto Toxic")
+local Section = Tab:NewSection("Auto Toxic")
+Section:NewButton("Darkai X Animation Hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Prison Life")
+local Section = Tab:NewSection("Guis")
+Section:NewButton("Crow GUI", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CrowzScripts/PrisonLife/main/Prison"))()
+    print("Clicked")
+end)
+Section:NewButton("Prison Life", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/dJ6tcE7h", true))()
+    print("Clicked")
+end)
+Section:NewButton("Prison Ware V1.3", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+    print("Clicked")
+end)
+Section:NewButton("Browser Prison Life", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/chriszrk/Bowser-Hub/main/BowserHubCool", true))()
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Other Scripts")
+Section:NewButton("Infinite Jump", "Unlimited Jumps", function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+local InfiniteJump = CreateButton("Infinite Jump: Off", StuffFrame)
+InfiniteJump.Position = UDim2.new(0,10,0,130)
+InfiniteJump.Size = UDim2.new(0,150,0,30)
+InfiniteJump.MouseButton1Click:connect(function()
+	local state = InfiniteJump.Text:sub(string.len("Infinite Jump: ") + 1) --too lazy to count lol
+	local new = state == "Off" and "On" or state == "On" and "Off"
+	InfiniteJumpEnabled = new == "On"
+	InfiniteJump.Text = "Infinite Jump: " .. new
+end)
+    print("Clicked")
+end)
